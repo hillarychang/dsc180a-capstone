@@ -1,0 +1,43 @@
+Q1 Project Proposal B02 - Kevin Wong, Kurumi Kaneko, Jevan Chahal, Hillary Chang
+
+Questions:
+How will we create a categorization model in order to sort memos into respective categories?\
+- Test for accuracy, latency
+- Make sure to choose specific one based on what we want to prioritize
+How will we estimate income of a consumer based on their purchases?
+
+Methods:
+Categorization Model (NLP)
+(Classification Model)
+- Logistic Regression (fast, reliable, easy-to-implement, not as accurate) 
+- XGBoost (fast, reliable, complicated)
+- Transformer (slower - latency, complicated to implement, hyperparamters are difficult)
+    - Neural Network (faster than transformer)
+- Tree (fast, somewhat reliable, hyperparameters can be difficult)
+
+
+Estimating Income - NOTE: Two part problem (go with inflows and outflows), One part problem (inflows); ask during lecture
+(Regression Model)
+- Gross Income: Amount earned at a job (i.e. Salary, Earnings, etc)
+- Net Income: Amount earned - amount spent 
+
+- XGBoost 
+- Neural Network
+- Decision Trees
+- Linear Regression
+
+Work Needed to Do:
+- Github Creation (Lesson 3)
+    - Sorting/Organization
+- Train/Test/Split
+- Data Cleaning
+    - Memo fields (WALMART****10/23 SALE -> WALMART)
+    - No NA values
+    - Dates are cleaned (no time specific ones)
+- Identify the categories that we want to use:
+    - Use the ones already in the Data
+- Model Creation 
+    - First try simple models
+    - Do more complex methods
+- System Resources
+    - 1 GPU, 4 Cores, DSMLP (neural networks & XGBoost)
